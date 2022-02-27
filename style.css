@@ -1,6 +1,6 @@
 
 #container{background-color: aliceblue;
-   border: solid 1px gray;
+   border: solid 1px #202324;
    width: 558px;
    height: 540px;
    display: flex;
