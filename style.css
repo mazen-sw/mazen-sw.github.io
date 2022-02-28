@@ -1,4 +1,17 @@
+.next{width:fit-content;
+   margin: auto;
+   height:max-content;
+   padding: 1%;
+   font-size: 130%;
+   margin-top: 50px;
+   text-align:center;
+   border:strong 2px;
+   border-color :rgb(102, 102, 102);
+   background-color:rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
 
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 #container{background-color: aliceblue;
    border: solid 1px #202324;
    width: 558px;
