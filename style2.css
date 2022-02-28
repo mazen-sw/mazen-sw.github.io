@@ -13,6 +13,14 @@ body{
 .backcol{
     background-color: rgb(141, 141, 141);
 }
+.flexbox{
+    margin: auto;
+    flex-direction: row;
+    height: 500 px ;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
 html{
     padding: 0;
     margin: 0;
@@ -51,11 +59,25 @@ html{
      margin: auto;
  }
  .black{
+     height: 30%;
+     width: 30%;
      background-color: black;
- }
+     color:white;
+    order:2 ;   
+}
  .white{
+     order: 1;
+     height: 30%;
+     width: 30%;
      background-color: white;
      color:black;
+ }
+ .gray{
+    order:3;
+    height: 30%;
+     width: 30%;
+     background-color: #202324;
+     color: aliceblue;
  }
  .box{
      float: left;
@@ -78,11 +100,13 @@ html{
  strong{
     color:rgb(161, 161, 161)
  }
- div{
+ .mydiv{
+     text-align: center;
+    margin: auto;
     border: 4px;
-    background-color:rgb(61, 61, 61);
-    border-color: rgb(168, 168, 168);
-    border-style: groove;
+    border-color: #5a5a5a;
+    border-style: solid;
+    padding: 10px;
  }
  li {
      display:flex;
