@@ -1,3 +1,22 @@
+body{
+    /*display:flex;
+    flex-wrap: wrap;
+     */
+    background-color: rgb(240, 240, 240);
+    color:rgb(20, 20, 20);
+    font-family: sans-serif;
+    font-size: large;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+}
+.backcol{
+    background-color: rgb(141, 141, 141);
+}
+html{
+    padding: 0;
+    margin: 0;
+}
 .next{
     width:fit-content;
      margin: auto;
@@ -12,6 +31,16 @@
      color: rgb(0, 0, 0);
      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  }
+.newhead{
+    padding: .5%;
+    margin: auto;
+    font-size: 120%;
+    width: 90%;
+    border:solid rgb(42, 42, 42);
+    text-align: center;
+    vertical-align: middle;
+    border-width: 0px 20px 5px 20px;
+}
  #container{
     background-color: aliceblue;
      border: solid 1px #202324;
@@ -40,26 +69,14 @@
     width: 192px;
     background-color: rgb(94, 100, 0);
  }
- body{
-    /*display:flex;
-    flex-wrap: wrap;
-     */
-    background-color: #202324;
-    color:white;
-    font-family: sans-serif;
- }
  h3{
     font-weight: bold;
     font-family: 'Hubballi', cursive;
  }
- p{
-    color: rgb(255, 255, 255);
- }
- em{
-    color:rgb(246, 246, 246);
- }
+
+
  strong{
-    color:rgb(245, 218, 182)
+    color:rgb(161, 161, 161)
  }
  div{
     border: 4px;
@@ -86,6 +103,6 @@
      height: 20px;
  }
  p em{
-    color:rgb(251, 135, 93)
+    color:rgb(70, 70, 70)
  }
  
