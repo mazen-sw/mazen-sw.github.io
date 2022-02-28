@@ -61,7 +61,7 @@ em{
 strong{
    color:burlywood
 }
-div{
+.madiv{
    background-color:rgb(32, 68, 32);
    border-color: red;
    border-style: groove;

@@ -34,8 +34,8 @@ html{
      margin-top: 50px;
      text-align:center;
      border:strong 2px;
-     border-color :rgb(102, 102, 102);
-     background-color:rgb(255, 255, 255);
+     border-color :rgb(20, 20, 20);
+     background-color:rgb(190, 190, 190);
      color: rgb(0, 0, 0);
      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  }
