@@ -18,14 +18,14 @@ body{
     display: grid;
     border: solid 7px rgb(200, 0, 0);
     margin: auto;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     /*1fr takes the left space and uses it and can be used as a piece of the page*/
     /*grid-auto-rows: minmax(100px,auto); is an option too */
-    grid-template-rows: 20% 70% 10%;
+    grid-template-rows: 18% 69% 13%;
     grid-template-areas:
-    "hd hd hd hd   hd   hd   hd   hd   hd"
-    "sd sd sd main main main main main main"
-    "ft ft ft ft   ft   ft   ft   ft   ft";
+    "hd hd hd hd hd hd hd hd hd hd"
+    "sd sd main main main main main main main main"
+    "ft ft ft ft   ft   ft   ft   ft  ft ft";
     ;
 }
 .grid{
@@ -57,7 +57,7 @@ body{
 }
 .box2{
     border: 1px solid red;
-    background: #F8FA9D;
+    background: #dfb2b2;
 }
 .next{
     width:fit-content;
@@ -81,6 +81,7 @@ body{
     border-width: 0px 20px 5px 20px;
 }
 .ccontain{
+    flex-direction: column;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -140,14 +141,10 @@ body{
     margin: 5px;
  }
  li {
-     display:flex;
-     flex-wrap: wrap;
-     font-family: 'Hubballi', cursive;
+     font-size: larger;
+     font:bold;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      margin: 10px;
-    ;
-     border: 2px solid rgb(83, 83, 83);
-     background-color: rgb(255, 255, 255);
-     width:fit-content;
  }
  li li{
      padding: 3px;
