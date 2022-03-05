@@ -1,13 +1,14 @@
 .next{
+   border:solid 10px rgb(136, 0, 0);
+   display: flex;
+   align-content: center;
+   justify-content: center;
    width:fit-content;
-    margin: auto;
     height:max-content;
-    padding: 1%;
+    margin: 1% 1% 1% 1%;
     font-size: 130%;
-    margin-top: 50px;
-    text-align:center;
-    border:strong 2px;
-    border-color :rgb(102, 102, 102);
+    padding: 1%;
+    border:solid 5px #8a8787;
     background-color:rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
