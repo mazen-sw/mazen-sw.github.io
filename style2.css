@@ -19,7 +19,7 @@ body{
     border: solid 7px chocolate;
     margin: auto;
     grid-gap: 15px;
-    padding: .8% .8% .8% .8%;
+    padding: .0% .8% .8% .8%;
     grid-template-columns: 70%  30%;
     grid-template-rows: 47% 53%;
 }
