@@ -13,10 +13,15 @@ body{
     background-color: rgb(141, 141, 141);
 }
 .grid{
+    width: 90%;
     display: grid;
-    grid-template-columns: 35vw 35vw;
-    grid-template-rows: 45vh;
+    justify-content: center;
+    border: solid 10px chocolate;
+    margin: auto;
     grid-gap: 15px;
+    padding: .8% .8% .8% .8%;
+    grid-template-columns: 70%  30%;
+    grid-template-rows: 47% 53%;
 }
 #forlater{
     border:solid 5px #2e2e2e;
@@ -27,13 +32,10 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .flexbox{
-    font-size: 5vh;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
     display: flex;
-    justify-content:center;
-    align-items: center;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
 }
 
 .next{
