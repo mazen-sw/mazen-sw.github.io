@@ -20,7 +20,8 @@ body{
     margin: auto;
     grid-template-columns: repeat(9, 1fr);
     /*1fr takes the left space and uses it and can be used as a piece of the page*/
-    grid-auto-rows: 20% 70% 10%;
+    /*grid-auto-rows: minmax(100px,auto); is an option too */
+    grid-template-rows: 20% 70% 10%;
     grid-template-areas:
     "hd hd hd hd   hd   hd   hd   hd   hd"
     "sd sd sd main main main main main main"
