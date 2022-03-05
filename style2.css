@@ -24,7 +24,7 @@ body{
     grid-template-rows: 18% 69% 13%;
     grid-template-areas:
     "hd hd hd hd hd hd hd hd hd hd"
-    "sd sd main main main main main main main main"
+    "sd sd sd main main main main main main main"
     "ft ft ft ft   ft   ft   ft   ft  ft ft";
     ;
 }
