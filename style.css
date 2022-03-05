@@ -15,7 +15,7 @@
 #container{
    background-color: aliceblue;
     border: solid 1px #202324;
-    width: 558px;
+    width: 540px;
     height: 540px;
     display: flex;
     flex-wrap: wrap;

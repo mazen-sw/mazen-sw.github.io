@@ -16,7 +16,7 @@ body{
     width: 90%;
     display: grid;
     justify-content: center;
-    border: solid 10px chocolate;
+    border: solid 7px chocolate;
     margin: auto;
     grid-gap: 15px;
     padding: .8% .8% .8% .8%;
