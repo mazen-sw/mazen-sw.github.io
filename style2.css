@@ -14,11 +14,12 @@ body{
 }
 #gridlayout{
     width: 97%;
-    height: 53em;
+    height: 96.974vh;
     display: grid;
     border: solid 7px rgb(200, 0, 0);
     margin: auto;
     grid-template-columns: repeat(9, 1fr);
+    /*1fr takes the left space and uses it and can be used as a piece of the page*/
     grid-auto-rows: 20% 70% 10%;
     grid-template-areas:
     "hd hd hd hd   hd   hd   hd   hd   hd"
