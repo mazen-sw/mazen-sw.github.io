@@ -12,6 +12,20 @@ body{
 .backcol{
     background-color: rgb(141, 141, 141);
 }
+#gridlayout{
+    width: 97%;
+    height: 53em;
+    display: grid;
+    border: solid 7px rgb(200, 0, 0);
+    margin: auto;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 20% 70% 10%;
+    grid-template-areas:
+    "hd hd hd hd   hd   hd   hd   hd   hd"
+    "sd sd sd main main main main main main"
+    "ft ft ft ft   ft   ft   ft   ft   ft";
+    ;
+}
 .grid{
     width: 90%;
     display: grid;
@@ -39,14 +53,15 @@ body{
     justify-content:flex-start;
     align-items:center;
 }
-
+.box2{
+    border: 1px solid red;
+    background: #F8FA9D;
+}
 .next{
     width:fit-content;
-     margin: auto;
      height:max-content;
      padding: 1%;
      font-size: 130%;
-     margin-top: 50px;
      text-align:center;
      border:solid 5px rgb(77, 77, 77);
      background-color:rgb(190, 190, 190);
@@ -64,8 +79,10 @@ body{
     border-width: 0px 20px 5px 20px;
 }
 .ccontain{
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
  #container{
     background-color: aliceblue;
