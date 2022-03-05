@@ -12,15 +12,25 @@ body{
 .backcol{
     background-color: rgb(141, 141, 141);
 }
+.grid{
+    display: grid;
+}
+#forlater{
+    border:solid 5px #2e2e2e;
+    background-color: rgb(71, 71, 71);
+    color: aliceblue;
+    width: 25%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .flexbox{
     position:relative;
-    flex-direction: row;
-    height: 500 px ;
-    width: 500px;
+    flex-direction: column;
+    height: fit-content ;
+    width: 160px;
     display: flex;
-    justify-content:space-around;
-    align-items: flex-end;
-    width: 100%;
+    justify-content:flex-start;
+    align-items: flex-start;
 }
 
 .next{
@@ -46,6 +56,11 @@ body{
     text-align: center;
     vertical-align: middle;
     border-width: 0px 20px 5px 20px;
+}
+.ccontain{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
  #container{
     background-color: aliceblue;
