@@ -18,7 +18,8 @@ tr{
     border: solid 1px black;
     margin:8px;
 }
-thead tr td{
+th{
+    border: solid 1px black;
     padding: 4px;
     font-size: 100%;
 }
