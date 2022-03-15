@@ -23,8 +23,8 @@
         <a href="#form"
             style="width: fit-content; border: solid 2px black;border-radius: 12px;padding: 3px;background-color: rgb(151, 151, 151);">Go
             to form</a>
-        <div>
-            <h1 style="text-align: center;font-size: 40px;margin: 0;padding: 0;">page</h1>
+        <div style="margin: 0px 50px 0px 50px;">
+            <h1 style="text-align: center;font-size: 40px;margin: 0px;padding: 0;">page</h1>
             <p
                 style="text-align: center;font-size: 30px;margin: 0;padding: 0;font-family: Georgia, 'Times New Roman', Times, serif;font-style: italic;color:#dddddd;">
                 By:mazen</p>
@@ -34,7 +34,7 @@
             table&#129313;</a>
     </div>
     <!--I'm a comment!-->
-    <div style="margin:auto;">
+    <div style="margin:auto;display: flex;align-content: center;flex-direction: column;align-items: center;">
         <!--main div-->
         <span id="me"></span>
         <dl style="border:solid 2px #dddddd;padding: 2px;width: fit-content;">
@@ -79,8 +79,8 @@
                 <!-- tfoot exsists too btw -->
             </table>
         </div>
-        <form action="" method="get" id="form"
-            style="padding:3px;margin-top: 10px;border: solid 3px black;border-radius: 10px;background-color: #cccccc;color: black;">
+        <form action="" method="get" target="blank" id="form"
+            style="width:fit-content;padding:3px;margin-top: 10px;border: solid 3px black;border-radius: 10px;background-color: #cccccc;color: black;">
             <div>
                 <label>Username</label>
                 <input type="text" autofocus name="username" required placeholder="Username" style="margin:3px "
@@ -103,11 +103,72 @@
             <div>
                 <input type="text" placeholder="5443" readonly name="id" style="margin:0px;color: gray;" value="4232">
             </div>
+            <div>
+                <div>
+
+                    <input id="win" type="radio" name="Os" value="windows" style="margin:0px;" checked>
+                    <label for="win">windows</label>
+                </div>
+
+                <div>
+
+                    <input id="mac" type="radio" name="Os" value="Mac" style="margin:0px;">
+                    <label for="mac">Mac</label>
+                </div>
+                <div>
+
+
+                    <input id="lin" type="radio" name="Os" value="Linux" style="margin:0px;">
+                    <label for="lin">Linux</label>
+                    <!-- checkbox,Select, Textarea also exist -->
+                </div>
+            </div>
+            <div>
+                <label for="sel">Nationality:</label>
+                <!-- multiple attribue also exsists -->
+                <select name="nationality" id="sel">
+
+                    <optgroup label=single>
+                        <option value="EU">European</option>
+                        <option selected value="FR">french</option>
+                        <option value="IT">Italian</option>
+                    </optgroup>
+
+                    <optgroup label=multi>
+                        <option value="EU">European</option>
+                        <option value="FR">french</option>
+                        <option value="IT">Italian</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="prog">programmign lang</label>
+                <input id="prog" list="programming" name="prog">
+                <datalist id="programming">
+                    <option value="Python">
+                    <option value="PHP">
+                    <option value="C#">
+                    <option value="C">
+                    <option value="C++">
+                    <option value="Scala">
+                </datalist>
+            </div>
+            <div>
+                <label>Upload</label>
+                <input id="file" type="file">
+            </div>
             <div style="display: flex;justify-content: center;">
                 <input style="margin:10px" type="reset" value="reset">
                 <input style="margin:10px" type="submit" value="send">
             </div>
         </form>
+        <br>
+        <p style="font-size:36px;">Iframe tutorial</p>
+        <iframe width="800" height="450"
+            src="https://www.youtube.com/embed/aycYLVSOtZo?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </div>
 </body>
 
