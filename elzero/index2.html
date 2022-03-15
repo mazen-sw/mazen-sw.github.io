@@ -3,7 +3,7 @@
     <head>
         <title>It's ok to learn</title>
         <style>
-            body{background-color: #181818;color:#cccccc;}
+            body{background-color: #4e5458;color:#cccccc;}
         </style>
         <script>
         </script>
@@ -12,14 +12,18 @@
         <meta name="describtion" content="This is an html page">
     </head>
     <body style="margin:0;display: flex;flex-direction: column;align-items: center;">
-        <div class="sticky-div">
+        <div class="sticky-div" style="display: flex;flex-direction: row;flex-wrap:nowrap;align-content:center;justify-content: center;align-items: center;">
+            <!-- <del>lorem</del> -->
+            <a href="#form" style="width: fit-content; border: solid 2px black;border-radius: 12px;padding: 3px;background-color: rgb(151, 151, 151);">Go to form</a>
+            <div>
             <h1 style="text-align: center;font-size: 40px;margin: 0;padding: 0;">page</h1>
             <p style="text-align: center;font-size: 30px;margin: 0;padding: 0;font-family: Georgia, 'Times New Roman', Times, serif;font-style: italic;color:#dddddd;">By:mazen</p>
+            </div>
+            <a href="#table3567" style="border: solid 2px black;border-radius: 12px;padding: 3px;background-color: rgb(151, 151, 151);">Go to table&#129313;</a>
         </div>
         <!--I'm a comment!-->
-        <a href="#me">Go to lorem?</a>
-        <a href="#table3567">Go to table?&#129313;</a>
-        <p id="me"><del>lorem</del></p>
+        <div style="margin:auto;"><!--main div-->
+        <span id="me"></span>
         <dl style="border:solid 2px #dddddd;padding: 2px;width: fit-content;">
             <dt>this is a dl</dt>
             <dd>a description list</dd>
@@ -61,5 +65,19 @@
                 <!-- tfoot exsists too btw -->
             </table>
         </div>
+        <form id="form" style="padding:3px;margin-top: 10px;border: solid 3px black;border-radius: 10px;background-color: #cccccc;color: black;">
+            <div>
+            <label>Username</label>
+            <input type="text" required style="margin:3px">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" required style="margin:3px">
+            </div>
+            <div style="display: flex;justify-content: center;">
+            <input type="submit">
+            </div>
+        </form>    
+    </div>
     </body>
 </html>
