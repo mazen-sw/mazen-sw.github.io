@@ -5,6 +5,7 @@
     <title>It's ok to learn</title>
     <style>
         body {
+            font-size: 1.7vw;
             background-color: #4e5458;
             color: #cccccc;
         }
@@ -12,26 +13,24 @@
     <script>
     </script>
     <link rel="stylesheet" href="sheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta name="describtion" content="This is an html page">
 </head>
 
 <body style="margin:0;display: flex;flex-direction: column;align-items: center;">
-    <div class="sticky-div"
-        style="display: flex;flex-direction: row;flex-wrap:nowrap;align-content:center;justify-content: center;align-items: center;">
+    <div class="sticky-div" id="gridlayout">
         <!-- <del>lorem</del> -->
-        <a href="#form"
-            style="width: fit-content; border: solid 2px black;border-radius: 12px;padding: 3px;background-color: rgb(151, 151, 151);">Go
-            to form</a>
-        <div style="margin: 0px 50px 0px 50px;">
+        <a href="#form" style="grid-area:l1;" class="button">Go to form</a>
+        <div style="grid-area:main;margin: 0 .5vw 0 .5vw;">
             <h1 style="text-align: center;font-size: 40px;margin: 0px;padding: 0;">page</h1>
             <p
                 style="text-align: center;font-size: 30px;margin: 0;padding: 0;font-family: Georgia, 'Times New Roman', Times, serif;font-style: italic;color:#dddddd;">
                 By:mazen</p>
         </div>
-        <a href="#table3567"
-            style="border: solid 2px black;border-radius: 12px;padding: 3px;background-color: rgb(151, 151, 151);">Go to
-            table&#129313;</a>
+        <a href="#table3567" style="grid-area:r1;" class="button">Go to table&#129313;</a>
+        <a href="presubmit.html" class="button" style="grid-area:r3;margin-right: 3%;font-size: 1.5vw;;">Go Go to Task
+            form</a>
     </div>
     <!--I'm a comment!-->
     <div style="margin:auto;display: flex;align-content: center;flex-direction: column;align-items: center;">
@@ -164,11 +163,11 @@
         </form>
         <br>
         <p style="font-size:36px;">Iframe tutorial</p>
-        <iframe width="800" height="450"
+        <iframe style="width: 19vw;height: 6vw;"
             src="https://www.youtube.com/embed/aycYLVSOtZo?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji"
             title="YouTube video player" frameborder="0"
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
     </div>
 </body>
 

@@ -4,6 +4,10 @@ td{
     padding: 8;
     font-size: 90%;
 }
+html {zoom: 100%;}
+.presub{
+    font-size: 100px;
+}
 .sticky-div {
     background-color: #202020ca;
     /* border: solid 4px white; */
@@ -29,6 +33,14 @@ thead{
     border: solid 1px black;
     margin: 8;
 }
+.button{
+    font-size: 130%;
+    border: solid 2px black;
+    border-radius: 12px;
+    background-color: rgb(151, 151, 151);
+    width: fit-content;
+    padding: 3px;
+}
 table{
     background-color: rgb(255, 255, 255);
     text-align: center;
@@ -36,4 +48,17 @@ table{
     margin: 0;
     border-spacing: 0;
     border: solid 2px rgb(0, 0, 0);
+}
+#gridlayout{
+    justify-content: center;
+    justify-items:center ;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /*1fr takes the left space and uses it and can be used as a piece of the page*/
+    /*grid-auto-rows: minmax(100px,auto); is an option too */
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "l3 l2 l1 main r1 r2 r3"
+    ;
 }
