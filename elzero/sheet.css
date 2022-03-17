@@ -4,7 +4,6 @@ td{
     padding: 8;
     font-size: 90%;
 }
-html {zoom: 100%;}
 .presub{
     font-size: 100px;
 }
@@ -34,7 +33,7 @@ thead{
     margin: 8;
 }
 .button{
-    font-size: 130%;
+    font-size: 4vw;
     border: solid 2px black;
     border-radius: 12px;
     background-color: rgb(151, 151, 151);
@@ -61,4 +60,10 @@ table{
     grid-template-areas:
     "l3 l2 l1 main r1 r2 r3"
     ;
+    border-bottom: solid 2px white;
+    background-color: #202020ca;
+    top: 0px;
+    width: 100%;
+    margin-top: 0;
+    padding: 0px 0px 1px;
 }

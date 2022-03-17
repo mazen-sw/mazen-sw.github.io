@@ -1,0 +1,135 @@
+td{
+    border: solid 1px black;
+    margin: 0;
+    padding: 8;
+    font-size: 90%;
+}
+.presub{
+    font-size: 100px;
+}
+#signup{
+    text-align: center;
+    height: 8vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    color: rgb(37, 37, 37);
+    background-color: #ffffff;
+    box-shadow:00vw 10vw 10vw #ffffff;
+    border-radius: 10vw;
+    margin:2vw;
+    width: 40vw;
+    border:solid .2vw white;
+    animation: mymove 10s infinite;
+}
+@keyframes mymove {
+    50% {box-shadow: 0vw 10vw 10vw rgb(37, 37, 37);}
+
+  
+  
+  }
+#grad1 {
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+input{
+    width: 30vw;
+    height: 5vw;
+    font-size: 3vw;
+}
+#win{
+    width: 3vw;
+    height: 3vw;
+}
+#mac{
+    width: 3vw;
+    height: 3vw;
+}
+#lin{
+        width: 3vw;
+        height: 3vw;
+}
+#form{
+    position: absolute;
+    width: 80vw;
+    padding:3px;
+    padding-top: 15vw;
+    margin-top: 20vw;
+    border: solid 3px rgb(255, 255, 255)
+    ;border-radius: 1vw
+    ;background-color: #cccccc;
+    color: black;
+    text-align: center;
+}
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 80%;               
+    background-color:#ffffff;
+    height: 3px;
+  }
+.sticky-div {
+    background-color: #202020ca;
+    /* border: solid 4px white; */
+    position: sticky;
+    top: 0px;
+    border-bottom: solid 2px white;
+    width: 100%;
+    margin-top: 0;
+    padding: 0px 0px 1px;
+}
+tr{
+    border: solid 1px black;
+    margin:8px;
+}
+th{
+    border: solid 1px black;
+    padding: 4px;
+    font-size: 100%;
+}
+thead{
+    color: white;
+    background-color: rgb(151, 151, 151);
+    border: solid 1px black;
+    margin: 8;
+}
+.button{
+    font-size: 4vw;
+    border: solid 2px black;
+    border-radius: 12px;
+    background-color: rgb(151, 151, 151);
+    width: fit-content;
+    padding: 3px;
+}
+table{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0 0 0 0; 
+    margin: 0;
+    border-spacing: 0;
+    border: solid 2px rgb(0, 0, 0);
+}
+#gridlayout{
+    justify-content: center;
+    justify-items:center ;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*1fr takes the left space and uses it and can be used as a piece of the page*/
+    /*grid-auto-rows: minmax(100px,auto); is an option too */
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "l1 main r1"
+    ;
+    border-bottom: solid 2px white;
+    background-image: url(coop.jpg);
+    top: 0px;
+    width: 100%;
+    margin-top: 0;
+    padding: 0px 0px 1px;
+}

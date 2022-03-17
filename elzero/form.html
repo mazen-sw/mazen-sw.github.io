@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The form</title>
+    <style>
+        body {
+            font-size: 1.7vw;
+            background-color: #4e5458;
+            color: #cccccc;
+        }
+    </style>
+    <script>
+    </script>
+    <link rel="stylesheet" href="sheet2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="describtion" content="This is an html page">
+</head>
+
+<body style="margin:0;display: flex;flex-direction: column;align-items: center;">
+    <div id="gridlayout">
+        <!-- <del>lorem</del> -->
+        <a href="#form" style="grid-area:l1;" class="button">Go to form</a>
+        <div style="grid-area:main;margin: 0 .5vw 0 .5vw;">
+            <h1 style="text-align: center;font-size: 40px;margin: 0px;padding: 0;color: rgba(10, 10, 10, 0.609);">Main
+            </h1>
+            <p
+                style="text-align: center;font-size: 30px;margin: 0;padding: 0;font-family: Georgia, 'Times New Roman', Times, serif;font-style: italic;color:#dddddd;">
+                By:mazen</p>
+        </div>
+        <a href="index2.html" class="button" style="grid-area:r1;margin-right: 3%;">Go to main</a>
+    </div>
+    <hr>
+    <div
+        style="position: relative;font-size:6vw;display: flex;align-content: center;flex-direction: column;align-items: center;">
+        <div id="signup">
+            <p style="margin: 0;">
+                Sign Up
+            </p>
+        </div>
+        <img src="duck.jpg" alt="dd" style="border-radius: 100%;width: 20vw;z-index: 9;">
+        <form action="" method="get" target="blank" id="form">
+            <div
+                style="margin-bottom: 3vw; display: flex; justify-content: center; flex-wrap: wrap; flex-direction: row; align-items: center;">
+                <div>
+                    <label>Username</label><br>
+                    <input type="text" autofocus name="username" required placeholder="Username" style="margin:3px "
+                        value="namex4308">
+                </div>
+                <div style="margin: 3vw;">
+                    <label>Password</label><br>
+                    <input type="password" maxlength="16" minlength="8" name="password" placeholder="Complex Password"
+                        required style="margin:3px">
+                </div>
+                <div style="margin: 3vw;">
+                    <label>number</label>
+                    <br>
+                    <input type="number" required maxlength="11" minlength="11" name="phnum" placeholder="01#########">
+                </div>
+                <div style="margin: 3vw;">
+                    <label>E-mail</label>
+                    <br>
+                    <input type="email" required placeholder="username@hostname.com" </div>
+                </div>
+            </div>
+            <div>
+                <label>User color <span id="grad1">astegma</span></label>
+                <br>
+                <input type="color" name="color" style="margin:3px">
+            </div>
+            <div>
+                <label>acc flexibility</label>
+                <br>
+                <input type="number" min="0" max="100" step="20" name="numb" style="margin:0px" value="0">
+            </div>
+            <div>
+                <label>Sign Up ID</label>
+                <br>
+                <input type="text" placeholder="5443" readonly name="id" style="margin:0px;color: gray;" value="4232">
+            </div>
+            <div>
+                <div style="text-align: center;;">
+                    <div>
+                        <label>Opearting system</label>
+                        <hr style="margin-bottom:0">
+                        <input id="win" type="radio" name="Os" value="windows" style="margin:0px;" checked>
+                        <label for="win">windows</label>
+                    </div>
+
+                    <div>
+
+                        <input id="mac" type="radio" name="Os" value="Mac" style="margin:0px;">
+                        <label for="mac">Mac</label>
+                    </div>
+                    <div>
+
+
+                        <input id="lin" type="radio" name="Os" value="Linux" style="margin:0px;">
+                        <label for="lin">Linux</label>
+                        <!-- checkbox,Select, Textarea also exist -->
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div style="margin:2vw">
+                <label for="sel">Nationality:</label>
+                <!-- multiple attribue also exsists -->
+                <select name="nationality" id="sel">
+
+                    <optgroup label=single>
+                        <option value="EU">European</option>
+                        <option selected value="FR">french</option>
+                        <option value="IT">Italian</option>
+                    </optgroup>
+
+                    <optgroup label=multi>
+                        <option value="EU">European</option>
+                        <option value="FR">french</option>
+                        <option value="IT">Italian</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+
+                <input id="prog" list="programming" name="prog">
+                <datalist id="programming">
+                    <option value="Minecraft">
+                    <option value="Genshin Impact">
+                    <option value="CS:GO">
+                    <option value="GTA V">
+                    <option value="Detroit Become human">
+                    <option value="brawhalla">
+                    <option value="Omori">
+                    <option value="bf4">
+                </datalist>
+                <label for="prog">Game</label>
+            </div>
+            <div style="margin: 2vw;">
+                <label>Profile Picture</label>
+                <input id="file" type="file">
+            </div>
+            <div style="margin-top:2vw;display: flex;justify-content: center;">
+                <input style="margin:10px" type="reset" value="reset" style="border-radius:1vw;">
+                <input style="margin:10px" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
