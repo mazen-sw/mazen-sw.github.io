@@ -48,6 +48,9 @@ table{
     border-spacing: 0;
     border: solid 2px rgb(0, 0, 0);
 }
+a{
+    text-decoration: none;
+}
 #gridlayout{
     justify-content: center;
     justify-items:center ;
