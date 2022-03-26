@@ -1,3 +1,7 @@
+a{
+   text-decoration: none;
+}
+
 .next{
    border:solid 10px rgb(136, 0, 0);
    display: flex;
