@@ -45,14 +45,14 @@ body {
     margin-top: 100px;
     margin-right: auto;
     border: white 20px solid;
-    border-color: black purple black purple;
+    border-color: black red red purple;
     animation: ani 5s linear 0s infinite;
     animation-direction: alternate;
 }
 
 @keyframes ani {
     to {
-        transform: rotate(80deg);
+        transform: rotate(80deg) translate(100px, 100px);
     }
 }
 
