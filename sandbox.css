@@ -1,0 +1,181 @@
+/* var(var name,fallback value(backup)) */
+
+:root {
+    --colorPlas: blue;
+}
+
+
+body {
+    background-color: #ffbec9;
+    background-image: url('https://steamuserimages-a.akamaihd.net/ugc/1708535856763851464/A2E42196EF00B4824549B18FD6FFC22EFDBAE0F2/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true');
+    background-size: cover;
+    height: 100vh;
+}
+
+::selection {
+    background-color: black;
+    /* box-shadow: 10px 10px 10px 10px red; */
+}
+
+.con {
+    background-color: aquamarine;
+    width: 796px;
+    height: 430;
+    padding-bottom: 20px;
+    border: #99F443 20px solid;
+    border-radius: 36% 30% 29% 35% / 47% 46% 51% 50%;
+}
+
+.ra3ama {
+    caret-color: transparent;
+}
+
+.boxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EC449B;
+    font-size: 9vh;
+    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(0, 0, 0);
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-right: auto;
+    border: white 20px solid;
+    border-color: black purple black purple;
+    animation: ani 5s linear 0s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ani {
+    to {
+        transform: rotate(80deg);
+    }
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 9vh;
+    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-right: auto;
+    border: gray 20px solid;
+    border-color: black purple black purple;
+}
+
+.rain {
+
+    width: 500px;
+    height: 500px;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0), rgb(255, 255, 255));
+    transition: all 10s ease 0s;
+    border-radius: 50% 20% 30% 10% / 30% 30% 100% 20%;
+}
+
+.rain:hover {
+    transform: rotate(900deg);
+}
+
+.un {
+    background-color: inherit;
+    border: inherit;
+    font: inherit;
+    width: calc(100% - 20%);
+    height: calc(100% - 20%);
+    margin: 10px;
+
+}
+
+.ball {
+    height: 0;
+    width: 0;
+    border: rgb(232, 112, 112) 200px solid;
+    border-radius: 100%;
+    margin-top: 10px;
+    display: block;
+    /* transition-delay: .2s;
+    transition-duration: .8s;
+    transition-property: margin-left, margin-top, border-color;
+    transition-timing-function: ease-in-out; */
+    transition: border-color 3s cubic-bezier(0, 1.42, 0.02, 0.05), margin-left .4s cubic-bezier(0, 1.42, 0.02, 0.05) .8s;
+}
+
+#trns:checked+.ball {
+    border-color: rgb(255, 239, 239);
+    margin-left: 396px;
+}
+
+.main {
+    position: relative;
+    width: 70vw;
+    height: 35vh;
+    margin-left: auto;
+    margin-right: auto;
+    top: calc(50vh - 17.5vh);
+    border: 5px #B66878 solid;
+    border-radius: 10px;
+    box-shadow: 4px -4px 8px 3px #DAABB5;
+    color: #99F443;
+    background-color: #EC449B;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: 20vw;
+}
+
+#ts:checked+label {
+    color: black;
+}
+
+/* label:hover::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: black solid 20px;
+    opacity: 80%;
+    border-color: black transparent transparent transparent;
+    position: fixed;
+    font-size: 20px;
+} */
+
+.main label:hover::before {
+    content: "Don't forget to contact me";
+    opacity: 80%;
+    width: fit-content;
+    height: fit-content;
+    font-size: 40px;
+    position: fixed;
+    background-color: black;
+    padding: 3px 10px 3px 10px;
+    border: black solid 20px;
+    border-color: transparent #ffffff00 rgb(223, 128, 128) transparent;
+    margin-top: -53px;
+    margin-left: 422px;
+
+}
+
+#ts:checked+label:hover::before {
+    color: #EC449B
+}
+
+#trns {
+    opacity: 0;
+}
+
+
+
+input {
+    opacity: 0;
+}

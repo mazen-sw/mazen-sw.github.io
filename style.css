@@ -1,94 +1,158 @@
-a{
+a {
    text-decoration: none;
 }
 
-.next{
-   border:solid 10px rgb(136, 0, 0);
+.next {
+   border: solid 10px rgb(136, 0, 0);
    display: flex;
    align-content: center;
    justify-content: center;
-   width:fit-content;
-    height:max-content;
-    margin: 1% 1% 1% 1%;
-    font-size: 130%;
-    padding: 1%;
-    border:solid 5px #8a8787;
-    background-color:rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   width: fit-content;
+   height: max-content;
+   margin: 1% 1% 1% 1%;
+   font-size: 130%;
+   padding: 1%;
+   border: solid 5px #8a8787;
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-#container{
+
+#c {
+   opacity: 0;
+}
+
+
+.fontbg {
+   background-image: url(https://steamuserimages-a.akamaihd.net/ugc/1708535856763851464/A2E42196EF00B4824549B18FD6FFC22EFDBAE0F2/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
+   background-size: cover;
+   background-position: center;
+   -webkit-background-clip: text;
+   background-clip: text;
+}
+
+.abyss {
+   font-family: 'Halloween Spooky', sans-serif;
+   display: block;
+   margin: auto;
+   height: 100px;
+   width: fit-content;
+   color: #202324;
+}
+
+#c:checked+.abyss {
+
+   animation: ab 4s ease .5 alternate forwards
+}
+
+.abyss+a {
+   font-family: 'Halloween Spooky', sans-serif;
+   height: 100px;
+   width: fit-content;
+   color: #202324;
+   display: none;
+}
+
+#c:checked+.abyss+a {
+   display: inline;
+   color: rgba(0, 0, 0, 0.32);
+}
+
+@keyframes ab {
+   to {
+      height: fit-content;
+      font-size: 100px;
+      color: rgba(0, 0, 0, 0.32);
+   }
+}
+
+
+
+#container {
    background-color: aliceblue;
-    border: solid 1px #202324;
-    width: 540px;
-    height: 540px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
+   border: solid 1px #202324;
+   width: 540px;
+   height: 540px;
+   display: flex;
+   flex-wrap: wrap;
+   margin: auto;
 }
-.black{
-    background-color: black;
+
+.black {
+   background-color: black;
 }
-.white{
-    background-color: white;
-    color:black;
+
+.white {
+   background-color: white;
+   color: black;
 }
-.box{
-    float: left;
-    text-align: center;
-    font-size: 160px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 180px;
-    height: 180px;
+
+.box {
+   float: left;
+   text-align: center;
+   font-size: 160px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   width: 180px;
+   height: 180px;
 }
-#skinny{
+
+#skinny {
    width: 192px;
    background-color: rgb(94, 100, 0);
 }
-body{
+
+body {
    /*display:flex;
    flex-wrap: wrap;
     */
    background-color: #202324;
-   color:white;
+   color: white;
    font-family: sans-serif;
 }
-h3{
+
+h3 {
    font-weight: bold;
    font-family: 'Hubballi', cursive;
 }
-p{
+
+p {
    color: rgb(104, 209, 104);
 }
-em{
-   color:aqua;
+
+em {
+   color: aqua;
 }
-strong{
-   color:burlywood
+
+strong {
+   color: burlywood
 }
-.madiv{
-   background-color:rgb(32, 68, 32);
+
+.madiv {
+   background-color: rgb(32, 68, 32);
    border-color: red;
    border-style: groove;
 }
+
 li {
-    display:flex;
-    flex-wrap: wrap;
-    font-family: 'Hubballi', cursive;
-    margin: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   font-family: 'Hubballi', cursive;
+   margin: 10px;
    ;
-    border: 2px solid rgb(255, 0, 242);
-    background-color: rgb(141, 27, 10);
-    width:fit-content;
+   border: 2px solid rgb(255, 0, 242);
+   background-color: rgb(141, 27, 10);
+   width: fit-content;
 }
-li li{
-    padding: 3px;
-    margin: 10px;
-    border: 2px solid rgb(87, 87, 87);
-    background-color: rgb(3, 78, 16);
-    width:fit-content;
-    height: 20px;
+
+li li {
+   padding: 3px;
+   margin: 10px;
+   border: 2px solid rgb(87, 87, 87);
+   background-color: rgb(3, 78, 16);
+   width: fit-content;
+   height: 20px;
 }
-p em{
-   color:rgb(251, 135, 93)
+
+p em {
+   color: rgb(251, 135, 93)
 }
