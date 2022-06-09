@@ -6,6 +6,7 @@
 
 
 body {
+    perspective-origin: bottom right;
     background-color: #ffbec9;
     background-image: url('https://steamuserimages-a.akamaihd.net/ugc/1708535856763851464/A2E42196EF00B4824549B18FD6FFC22EFDBAE0F2/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true');
     background-size: cover;
@@ -31,6 +32,7 @@ body {
 }
 
 .boxs {
+    transform: skew(315deg, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,10 +49,27 @@ body {
     border-radius: 10%;
     transform: translatey(-100px);
     margin-right: auto;
-    animation: ani 10s linear 0s infinite;
+    animation: ani 20s linear 0s infinite;
     animation-direction: alternate;
     border: black solid 20px;
+
 }
+
+.un {
+    background-color: inherit;
+    border: inherit;
+    border-radius: 20%;
+    font: inherit;
+    width: calc(100% - 5%);
+    height: calc(100% - 5%);
+    margin: 10px;
+    border-radius: calc(inherit - 3px);
+    background-image: inherit;
+    margin-right: auto;
+    animation: ani 20s linear 0s infinite;
+    animation-direction: alternate;
+}
+
 
 @keyframes ani {
     50% {
@@ -93,20 +112,6 @@ body {
     transform: rotate(900deg);
 }
 
-.un {
-    background-color: inherit;
-    border: inherit;
-    border-radius: 20%;
-    font: inherit;
-    width: calc(100% - 5%);
-    height: calc(100% - 5%);
-    margin: 10px;
-    border-radius: calc(inherit - 3px);
-    background-image: inherit;
-    margin-right: auto;
-    animation: ani 8s linear 0s infinite;
-    animation-direction: alternate;
-}
 
 .ball {
     height: 0;
