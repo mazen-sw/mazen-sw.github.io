@@ -44,10 +44,12 @@ body {
     height: 3000px;
     margin-left: auto;
     margin-top: 100px;
+    border-radius: 10%;
     transform: translatey(-100px);
     margin-right: auto;
     animation: ani 10s linear 0s infinite;
     animation-direction: alternate;
+    border: black solid 20px;
 }
 
 @keyframes ani {
@@ -94,10 +96,12 @@ body {
 .un {
     background-color: inherit;
     border: inherit;
+    border-radius: 20%;
     font: inherit;
-    width: calc(100% - 10%);
-    height: calc(100% - 10%);
+    width: calc(100% - 5%);
+    height: calc(100% - 5%);
     margin: 10px;
+    border-radius: calc(inherit - 3px);
     background-image: inherit;
     margin-right: auto;
     animation: ani 8s linear 0s infinite;
