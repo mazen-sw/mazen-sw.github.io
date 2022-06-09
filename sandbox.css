@@ -95,6 +95,9 @@ body {
     height: calc(100% - 10%);
     margin: 10px;
     background-image: inherit;
+    margin-right: auto;
+    animation: ani 5s linear 0s infinite;
+    animation-direction: alternate;
 }
 
 .ball {
