@@ -73,11 +73,11 @@ body {
 
 @keyframes ani {
     50% {
-        transform: skewY(30deg) rotate(80deg) translate3d(100px, 100px, 10px);
+        transform: rotate(80deg) translate(100px, 100px);
     }
 
     100% {
-        transform: skewY(0deg) rotate(-80deg) translate3d(-100px, -100px, 10px);
+        transform: rotate(-80deg) translate(-100px, -100px);
     }
 }
 
