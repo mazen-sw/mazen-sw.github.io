@@ -6,7 +6,6 @@
 
 
 body {
-    perspective-origin: bottom right;
     background-color: #ffbec9;
     background-image: url('https://steamuserimages-a.akamaihd.net/ugc/1708535856763851464/A2E42196EF00B4824549B18FD6FFC22EFDBAE0F2/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true');
     background-size: cover;
