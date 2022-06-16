@@ -660,6 +660,11 @@ body {
     header {
         width: 20%;
     }
+
+    .cra {
+        font-size: .8em
+    }
+
 }
 
 .mineico {
