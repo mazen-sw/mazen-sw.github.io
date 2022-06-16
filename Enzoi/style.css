@@ -648,6 +648,18 @@ body {
     .cra a {
         font-size: .7em !important;
     }
+
+    .info a {
+        font-size: 1.2em !important;
+    }
+
+    .info p {
+        font-size: 1.2em !important;
+    }
+
+    header {
+        width: 20%;
+    }
 }
 
 .mineico {
