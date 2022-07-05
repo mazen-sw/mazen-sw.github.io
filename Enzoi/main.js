@@ -30,9 +30,7 @@ function idnchange(){
     //ColorLuminance(changecolor.value, .9)
 }
 
-function contact(){
-    
-}
+
 let signbtn = document.getElementById("signup")
 let ppup = document.getElementById("ppup")
 function appear() {
