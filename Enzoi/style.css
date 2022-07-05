@@ -2,7 +2,7 @@
 
 :root {
     --pyth: "https://www.freecodecamp.org/news/content/images/2022/04/virtual-env-python.png";
-    --idncolor: rgb(244 106 40);
+    --idncolor: #f46a28;
     ;
 }
 
@@ -55,14 +55,14 @@
 header {
     border-radius: 10%;
     background-color: rgb(48, 53, 56);
-    width: fit-content;
-    height: 90%;
+    width: fit-content !important;
+    height: 98%;
     position: fixed;
     z-index: 200;
     display: flex;
     flex-direction: column;
     right: 0;
-    top: 2em;
+    top: 1%;
     align-items: flex-start;
     justify-content: space-around;
     box-shadow: 0px 1px 12px 5px black;
@@ -117,6 +117,7 @@ header:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .navigation a {
@@ -127,9 +128,9 @@ header:hover {
     display: block;
     border: #484e51 1px solid;
     border-width: 2px 0 0px 0;
-    width: 7.4em;
     text-align: center;
     padding: 1em;
+    width: 100%;
 }
 
 .navigation a:last-child {
@@ -184,7 +185,7 @@ section {
 
 .main-btn {
     color: #fff;
-    background-color: rgb(228, 160, 14);
+    background-color:var(--idncolor);
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
@@ -197,7 +198,7 @@ section {
 }
 
 .main-btn:hover {
-    background-color: var(--idncolor);
+    background-color: calc(var(--idncolor));
     transform: scale(1.1);
 }
 
@@ -543,9 +544,6 @@ body {
         transform: translatex(10px) !important;
     }
 
-    .navigation a {
-        margin-left: auto;
-    }
 
     .main-content h2 {
         font-size: 0.8em;
@@ -566,16 +564,14 @@ body {
 
 @media (max-width:600px) {
     .main h2 span {
-        font-size: 2.9em;
+        font-size: 2.6em;
     }
 
     .main h3 {
         font-size: 1.56em
     }
 
-    .navigation a {
-        width: 4em;
-    }
+
 }
 
 
@@ -629,12 +625,12 @@ body {
         margin-left: -75px;
     }
 
-    .navigation a {
-        width: 1em;
-        margin-left: -.2em;
+}
+@media (max-width:400px) {
+    .main h2 span{
+        font-size: 1.4em;
     }
 }
-
 @media (max-width:380px) {
     .main h2 {
         font-size: 2em
@@ -666,12 +662,16 @@ body {
     }
 
     .navigation a {
-        width: 1em;
-        margin-left: -0.2em;
+
         font-size: .8em;
     }
+    .main div{
+        width: 80%;
+    }
 }
-
+.main div{
+    width: 91%;
+}
 .mineico {
     font-size: 8em;
 }
