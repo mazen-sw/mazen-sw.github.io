@@ -3,7 +3,11 @@
 :root {
     --pyth: "https://www.freecodecamp.org/news/content/images/2022/04/virtual-env-python.png";
     --idncolor: #f46a28;
-    ;
+    --lightidn: #ff8b39;
+    --bg: darkturquoise;
+    --accent: salmon;
+    --messagecolor: blanchedalmond;
+
 }
 
 * {
@@ -140,6 +144,9 @@ header:hover {
 .navigation a:hover {
     color: rgb(57, 57, 241);
 }
+.navigation a.dont:hover{
+    color: var(--lightidn);
+}
 
 section {
     padding: 100px 200px;
@@ -185,7 +192,7 @@ section {
 
 .main-btn {
     color: #fff;
-    background-color:var(--idncolor);
+    background-color: var(--idncolor);
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
@@ -198,7 +205,7 @@ section {
 }
 
 .main-btn:hover {
-    background-color: calc(var(--idncolor));
+    background-color: var(--lightidn);
     transform: scale(1.1);
 }
 
@@ -214,7 +221,7 @@ section {
     color: var(--idncolor);
     font-size: 2.2em;
     font-weight: 800;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .content {
@@ -496,6 +503,7 @@ img {
     section {
         padding: 80px 20px;
         padding-left: 20px;
+        padding-bottom: 20px;
     }
 
     .main-content h2 {
@@ -526,6 +534,10 @@ body {
 
     .main h3 {
         font-size: 1.35em;
+    }
+
+    .sendme p {
+        font-size: 1.5em !important;
     }
 
 }
@@ -605,6 +617,11 @@ body {
         font-size: 10px;
     }
 
+    #changecolor {
+        width: 20px;
+        height: 20px;
+    }
+
     .main h2 span {
         font-size: 2.51em;
     }
@@ -626,11 +643,13 @@ body {
     }
 
 }
+
 @media (max-width:400px) {
-    .main h2 span{
+    .main h2 span {
         font-size: 1.4em;
     }
 }
+
 @media (max-width:380px) {
     .main h2 {
         font-size: 2em
@@ -665,13 +684,16 @@ body {
 
         font-size: .8em;
     }
-    .main div{
+
+    .main div {
         width: 80%;
     }
 }
-.main div{
+
+.main div {
     width: 91%;
 }
+
 .mineico {
     font-size: 8em;
 }
@@ -768,4 +790,93 @@ hr {
 
 .card:hover [href="mailto:mazenx1234@gmail.com"] {
     color: var(--idncolor);
+}
+
+#signup{
+    cursor: pointer;
+}
+
+.sendme {
+    color: var(--idncolor);
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.sendme p {
+    margin: auto;
+    width: fit-content;
+    border-radius: 7px;
+    padding: 7px;
+    font-size: 2em;
+    box-shadow: 0px 0px 20px 0px black;
+    BACKGROUND-COLOR: #484848;
+    cursor: pointer;
+}
+
+#ppup {
+    font-size: 2em;
+    background-color: rgba(128, 128, 128, 0.527);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0%;
+    z-index: 999;
+    display: none;
+}
+
+#ppup div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: rgb(48, 53, 56);
+    color: var(--idncolor);
+    padding: 50px;
+    border-radius: 6px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+
+}
+#ppup input {
+    display: block;
+    width: 100%;
+    padding: .2em;
+    margin: .2em 0 .6em;
+    font-size: .7em;
+}
+label{
+    text-align: center;
+}
+#ppup button[onclick=dismiss] {
+    background: var(--accent);
+    border: none;
+    margin: 1em 0;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px;
+}
+#ppup span{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    font-size:.6em;
+    color: wheat;
+}
+#ppup span input{
+    margin: 8px;
+    width: 20px;
+}
+#ppup span a{
+    color: var(--idncolor)
+}
+#ppup span a:visited{
+    color: white;
 }

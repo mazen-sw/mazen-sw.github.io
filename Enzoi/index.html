@@ -27,11 +27,11 @@
         </div>
         <nav class="navigation">
 
-            <a><input type="color" value = "" name="pgcolor" id="changecolor" onchange="idnchange()"></a>
+            <a><input type="color" value="" name="pgcolor" id="changecolor" onchange="idnchange()"></a>
 
-            <a>Sign up</a>
+            <a id="signup" onclick="appear()" >Sign up</a>
 
-            <a>Contact</a>
+            <a href="#contact" id="prototype">Contact</a>
 
         </nav>
     </header>
@@ -198,7 +198,32 @@
                     <a href="mailto:mazenx1234@gmail.com">mazenx1234@gmail.com</a>
                 </div>
             </div>
+            <div class="sendme" id="sendme" onclick="contact">
+                <p>Contact Now!</p>
+            </div>
+            <div id="ppup">
+                <div>
+                    <form id="myform"class="login-form">
+                        <label>Username</label>
+                        <input type="text" name="username" id="user" required>
+
+                        <label>Password</label>
+                        <input type="password" name="password" required>
+                        <span>
+                            <input required type="checkbox" name="robot" id="robo">
+                            <label for="robo">I'm not a robot</label>
+                        </span>
+                        <span>
+                            <input required type="checkbox" name="legacy" id="lega">
+                            <label for="lega">I read the policy and <a href="https://policies.google.com/privacy?hl=en-US#about">LEGACY</a></label>
+                        </span>
+                        <input type="button" value="Sign up" onclick="dismiss()">
+                        <input type="hidden" name="did_login" value="true">
+                    </form>
+                </div>
+            </div>
         </div>
+
     </section>
 
     <footer class="footer" id="footer">
