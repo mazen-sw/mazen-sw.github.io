@@ -17,7 +17,8 @@
         <input type="checkbox" name="hh" id="hh">
         <label for="hh">Hide</label>
     </div> -->
-    <div class="cra">
+    <div class="cra"id="cra">
+        <span onclick="closecra()">✕</span>
         <a href="notes.html" target="_blank">Creator notes</a>
     </div>
     <header id="head">
@@ -198,9 +199,6 @@
                     <a href="mailto:mazenx1234@gmail.com">mazenx1234@gmail.com</a>
                 </div>
             </div>
-            <div class="sendme" id="sendme" onclick="contact">
-                <p>Contact Now!</p>
-            </div>
             <div id="ppup">
                 <div>
                     <form id="myform"class="login-form">
@@ -223,7 +221,13 @@
                 </div>
             </div>
         </div>
-
+        <div class="contactcontain">
+            <div class="sendme" id="sendme" onclick="contact()">
+                <p>Contact Now!</p>
+            </div>
+            <label for="writing" id="shown">your msg ↓</label>
+            <textarea name="message" id="writing" cols="30" rows="10"></textarea>
+        </div>
     </section>
 
     <footer class="footer" id="footer">

@@ -21,7 +21,6 @@ let head = document.getElementById("head")
 let foot = document.getElementById("footer")
 foot.style.paddingRight = (window.getComputedStyle(head).width)
 let changecolor = document.getElementById("changecolor")
-changecolor.setAttribute("value",getComputedStyle(document.documentElement).getPropertyValue('--idncolor').substring(1))
 function idnchange(){
     document.documentElement.style.setProperty("--idncolor",changecolor.value)
     document.documentElement.style.setProperty("--lightidn",ColorLuminance(changecolor.value, .3))
@@ -53,4 +52,27 @@ function dismiss(){
         alert("username is empty!")
     }
 
+}
+function closecra(){
+    let cra = document.getElementById("cra")
+    cra.style.display ="none"
+}
+let sendme = document.getElementById("sendme")
+let textsend = document.querySelector("#sendme p")
+function contact(){
+
+    textsend.innerText = "send?"
+    textsend.style.color = getComputedStyle(document.documentElement).getPropertyValue("--lightidn");
+    let shown = document.getElementById("shown")
+    let writing = document.getElementById("writing")
+    shown.style.display = "block"
+    writing.style.display = "block"
+    sendme.setAttribute("onclick","send()")
+}
+function send(){
+textsend.innerText = "Sent ✓"
+textsend.style.color = "lightgreen"
+    shown.style.display = "none"
+    writing.style.display = "none"
+    sendme.setAttribute("onclick","")
 }
